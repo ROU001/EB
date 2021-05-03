@@ -1,6 +1,3 @@
-#// Don't forget to hit SUBSCRIBE, COMMENT, LIKE, SHARE! and LEARN... :)
-# But srsly, hit that sub button so you don't miss out on more content! 
-
 
 '''imports'''
 import smtplib
@@ -17,7 +14,7 @@ def banner():
     print(bcolors.GREEN + '+[+[+[ Email-Bomber v1.0 ]+]+]+')
     print(bcolors.GREEN + '+[+[+[ made with codes ]+]+]+')
     print(bcolors.GREEN + '''
-                     \|/
+                     \|/             
                        `--+--'
                           |
                       ,--'#`--.
@@ -34,9 +31,7 @@ def banner():
              \#########################/   https://code.dcoder.tech/files/code/60552439841db2065614faa4/eb
               `.#####################,'
                 `._###############_,'
-                   `--..#####..--'                                 ,-.--.
-*.______________________________________________________________,' (Bomb)
-                                                                    `--' ''')
+                   `--..#####..--'                              ''')
     
 
 
