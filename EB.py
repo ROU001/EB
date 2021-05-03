@@ -14,24 +14,23 @@ def banner():
     print(bcolors.GREEN + '+[+[+[ Email-Bomber v1.0 ]+]+]+')
     print(bcolors.GREEN + '+[+[+[ made with codes ]+]+]+')
     print(bcolors.GREEN + '''
-                     \|/             
-                       `--+--'
-                          |
-                      ,--'#`--.
-                      |#######|
-                   _.-'#######`-._
-                ,-'###############`-.
-              ,'#####################`,         
-             |#########################|       
-            |###########################|       
-           |#############################|
-           |#############################|              Author: N3TW0RKR3/\P3R
-           |#############################|             Conncted To 1000000 Servers   
-            |###########################|
-             \#########################/   https://code.dcoder.tech/files/code/60552439841db2065614faa4/eb
-              `.#####################,'
-                `._###############_,'
-                   `--..#####..--'                              ''')
+  
+                                                                                                                                          
+                                                                                                                                                  
+_|      _|  _|_|_|    _|_|_|_|_|  _|          _|    _|    _|_|_|    _|    _|  _|_|_|    _|_|_|    _|  _|    _|_|_|    _|_|_|    _|_|_|      _|    
+_|_|    _|        _|      _|      _|          _|  _|  _|  _|    _|  _|  _|    _|    _|        _|  _|  _|    _|    _|        _|  _|    _|  _|_|_|  
+_|  _|  _|    _|_|        _|      _|    _|    _|  _|  _|  _|_|_|    _|_|      _|_|_|      _|_|    _|_|_|_|  _|_|_|      _|_|    _|_|_|    _|_|    
+_|    _|_|        _|      _|        _|  _|  _|    _|  _|  _|    _|  _|  _|    _|    _|        _|      _|    _|              _|  _|    _|    _|_|  
+_|      _|  _|_|_|        _|          _|  _|        _|    _|    _|  _|    _|  _|    _|  _|_|_|        _|    _|        _|_|_|    _|    _|  _|_|_|  
+                                                                                                                                            _|    
+                                                                                                                                                  
+ _        ___    _  _      _  _ _  
+|_|\/| /\  | |  |_)/ \|\/||_)|_|_) 
+|_|  |/--\_|_|_ |_)\_/|  ||_)|_| \ 
+                                   
+                                                                                             
+
+''')
     
 
 
@@ -40,9 +39,9 @@ class Email_Bomber:
 
     def __init__(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ Initializing program ]+]+]+')
+            print(bcolors.RED + '\n+[+[+[ STARTING UP SERVERS ON SMTP ]+]+]+')
             self.target = str(input(bcolors.GREEN + 'Enter target email <: '))
-            self.mode = int(input(bcolors.GREEN + 'Enter BOMB mode (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) <: '))
+            self.mode = int(input(bcolors.GREEN + 'Enter FLOOD mode (1,2,3,4) || 1:(1000) 2:(500) 3:(250) 4:(custom) <: '))
             if int(self.mode) > int(4) or int(self.mode) < int(1):
                 print('ERROR: Invalid Option. GoodBye.')
                 sys.exit(1)
@@ -51,7 +50,7 @@ class Email_Bomber:
 
     def bomb(self):
         try:
-            print(bcolors.RED + '\n+[+[+[ Setting up bomb ]+]+]+')
+            print(bcolors.RED + '\n+[+[+[ Setting up FLOOD ]+]+]+')
             self.amount = None
             if self.mode == int(1):
                 self.amount = int(1000)
@@ -61,7 +60,7 @@ class Email_Bomber:
                 self.amount = int(250)
             else:
                 self.amount = int(input(bcolors.GREEN + 'Choose a CUSTOM amount <: '))
-            print(bcolors.RED + f'\n+[+[+[ You have selected BOMB mode: {self.mode} and {self.amount} emails ]+]+]+')
+            print(bcolors.RED + f'\n+[+[+[ You have selected FLOOD mode: {self.mode} and {self.amount} emails ]+]+]+')
         except Exception as e:
             print(f'ERROR: {e}')
 
